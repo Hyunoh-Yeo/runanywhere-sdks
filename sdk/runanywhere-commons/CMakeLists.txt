@@ -171,6 +171,7 @@ set(RAC_FEATURES_SOURCES
     src/features/llm/streaming_metrics.cpp
     src/features/llm/llm_analytics.cpp
     src/features/llm/structured_output.cpp
+    src/features/llm/tool_calling.cpp
     # STT
     src/features/stt/stt_component.cpp
     src/features/stt/rac_stt_service.cpp
@@ -223,6 +224,7 @@ endif()
 target_include_directories(rac_commons PUBLIC
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
     $<INSTALL_INTERFACE:include>
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/third_party>
 )
 
 # Private includes for implementation
