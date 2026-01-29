@@ -23,8 +23,8 @@
 #ifndef RAC_TOOL_CALLING_H
 #define RAC_TOOL_CALLING_H
 
-#include "core/rac_error.h"
-#include "core/rac_types.h"
+#include "../../core/rac_error.h"
+#include "../../core/rac_types.h"
 
 #ifdef __cplusplus
 extern "C" {
